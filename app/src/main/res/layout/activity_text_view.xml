@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".TextViewActivity">
+
+    <LinearLayout
+        android:id="@+id/mainframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/labelframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_img">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/signup_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="Sign Up"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/credsframe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/fn_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="Full Name: "
+                android:textColor="@color/white"
+                android:textSize="14dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/fn_input"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="13dp"
+                    android:padding="13dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/white"
+                    android:hint="First Name"
+                    android:background="@drawable/rectangle"
+                    android:textColor="@color/black"
+                    android:textSize="15dp">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/ln_input"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:padding="13dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/white"
+                    android:hint="Last Name"
+                    android:background="@drawable/rectangle"
+                    android:textColor="@color/black"
+                    android:textSize="15dp">
+                </EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mail_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="Email Address: "
+                android:textColor="@color/white"
+                android:textSize="14dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/mail_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="13dp"
+                android:padding="13dp"
+                android:inputType="textEmailAddress"
+                android:hint="abcd@gmail.com"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15dp">
+            </EditText>
+
+            <TextView
+                android:id="@+id/pw_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="Password: "
+                android:textColor="@color/white"
+                android:textSize="14dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/pw_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="13dp"
+                android:padding="13dp"
+                android:inputType="textPassword"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/white"
+                android:textSize="15dp">
+            </EditText>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_btn"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:text="Register"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#E3E1E1">
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

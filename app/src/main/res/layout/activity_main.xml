@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click a button for respective element examples"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginVertical="20dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/text_button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Edit Text Example"
+                android:background="@drawable/round_btn">
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/radio_button"
+                android:layout_width="250dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:text="Radio Button Example"
+                android:background="@drawable/round_btn">
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/spinner_button"
+                android:layout_width="250dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:text="Spinner Example"
+                android:background="@drawable/round_btn">
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/autocomplete_button"
+                android:layout_width="250dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:text="Auto Complete Text View Example"
+                android:background="@drawable/round_btn">
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/datentime_button"
+                android:layout_width="250dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:text="Date/ Time Picker Example"
+                android:background="@drawable/round_btn">
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
